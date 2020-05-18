@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My MATTER Maze</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      overflow-y: hidden;
+    }
+    .hidden {
+      display: none !important;
+    }
+    h1 {
+      color: white;
+      font-size: 3.6rem;
+    }
+    .winner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 1;
+      height: 100vh;
+      width: 100vw;
+    }
+  </style>
+  <body>
+    <div class="winner hidden">
+      <h1>You Win!</h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
