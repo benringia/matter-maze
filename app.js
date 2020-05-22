@@ -2,10 +2,10 @@
 //used with MATTER JS & CANVAS API
 
 
-const { Engine, Render, Runner, World, Bodies, Body, Events} = Matter;
+const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 
-const cellsHorizontal = 14;
-const cellsVertical = 10;
+const cellsHorizontal = 24;
+const cellsVertical = 20;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
@@ -28,6 +28,7 @@ Render.run(render);
 Runner.run(Runner.create(), engine);
 
 
+
 // WALLS
 const walls = [
   Bodies.rectangle(width / 2, 0, width, 2, { isStatic: true}),
@@ -36,6 +37,7 @@ const walls = [
   Bodies.rectangle(width, height / 2, 2, height, { isStatic: true})
 ];
 World.add(world, walls);
+
 
 //Maze generation
 
